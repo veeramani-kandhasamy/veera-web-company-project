@@ -15,7 +15,7 @@
 
 
    <!--navbar--> 
-   <section  >
+   <section  id="home">
     <nav  class="nav-flex">
         <logo class="logo">  <span style="color:red">C</span style="color:red">u<span  style="color:red">l</span>t-<span style="color:red">AssiC</span></logo>
         <ul class=".ul">
@@ -25,12 +25,12 @@
             <li><a href="#footers">contacts</a></li>
         </ul>
         <div class="nav-icons">
-            <i class="fa fa-twitter" style="font-size:36px " ></i>
-            <i class="fa fa-whatsapp" style="font-size:36px"></i>
-            <i class="fa fa-instagram" style="font-size:36px"></i>
+            <i id ="i1" class="fa fa-twitter" style="font-size:36px " ></i>
+            <i id="i2" class="fa fa-whatsapp" style="font-size:36px"></i>
+            <i id="i3" class="fa fa-instagram" style="font-size:36px"></i>
         </div>
         <div class="nav-btn">
-            <button><i class="fa fa-rocket" style="font-size:24px"></i>GET STARTED</button>
+            <button id="myButton" ><i class="fa fa-rocket" style="font-size:24px"></i>GET STARTED</button>
         </div>
         <div class="menu">
             <div class="menulist1"></div>
@@ -50,7 +50,7 @@
             SOLUTION<br></strong><strong>COMPANY</strong><strong><br></strong></h1><br></div>
            
                  <p>The web solutions are un the shiftingLorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, iure numquam ad facilis fuga id temporibus ipsam a repudiandae perferendis?</p><br>
-                 <button><i class="fa fa-rocket" style="font-size:24px"></i>GET STARTED</button>
+                 <button id="myButton1"><i class="fa fa-rocket" style="font-size:24px"></i>GET STARTED</button>
               
         </div>
         <div class="body1-img"><img src="aagensu0k.png" alt=""></div>
@@ -149,7 +149,7 @@
 <!---video-->
 <section id="videos">
     <div class="video-container">
-        <div class="thumnail"><img src="02.jpg" alt=""><i class="fa fa-play" aria-hidden="true"></i></div>
+        <div class="thumnail"><img src="02.jpg" alt=""><i id="play"     class="fa fa-play" aria-hidden="true"></i></div>
         <div class="video-content">
     
             <div class="video-line"></div>
@@ -241,7 +241,7 @@
             <div class="newsletter-container-box">
             <input type="text" placeholder="Enter Your Name">
             <input type="mail" placeholder=" Enter the Email">
-            <button class="bb"><i class='fa fa-edit' style='font-size:24px'></i>Subscribe</button>
+            <button  id="sub"    class="bb"><i class='fa fa-edit' style='font-size:24px'></i>Subscribe</button>
            </div>
  </div>
 
@@ -262,10 +262,10 @@
         </div>
         <div class="footer-nav"><ul>
             <li>Home</li>
-            <li>products</li>
-            <li>Services</li>
-            <li>Pricing</li>
-            <li>Help</li>
+           <li>pricing</li> 
+           <li>Services</li>
+           <li>Pricing</li> 
+           <li>Help</li>
         </ul></div>
         <div class="ideals"><ul>
             <li>Ideals & Plans</li>
@@ -279,7 +279,7 @@
                 <li><i class="fa fa-phone"></i>+213 632 435</li>
                 <li><i class="fa fa-envelope"></i>info@yoursite.com</li>
                 <li><i class="fa fa-map-marker" aria-hidden="true"></i>Office 3, Street 54</li>
-                <li> <button><i class="fa fa-envelope"></i>CONTACT US</button></li>
+                <li> <button id="email"><i class="fa fa-envelope"></i>CONTACT US</button></li>
             </ul>
         </div>
      </div>
@@ -293,6 +293,62 @@
     b.addEventListener("click",()=>{
         a.classList.toggle("nav-toggle")
     })
+
+
+    const button = document.getElementById("myButton");
+
+button.addEventListener("click", () => {
+  window.location.assign("login page/login.html");
+});
+
+
+
+const button1 = document.getElementById("myButton1");
+
+button1.addEventListener("click", () => {
+  window.location.assign("login page/login.html");
+});
+
+const i1 = document.getElementById("i1");
+
+i1.addEventListener("click", () => {
+  window.location.assign("https://twitter.com/home?lang=en");
+});
+
+
+const i2 = document.getElementById("i2");
+
+i2.addEventListener("click", () => {
+  window.location.assign("https://web.whatsapp.com/");
+});
+
+const i3 = document.getElementById("i3");
+
+i3.addEventListener("click", () => {
+  window.location.assign("https://www.instagram.com/accounts/login/?hl=en");
+});
+
+
+const play = document.getElementById("play");
+
+play.addEventListener("click", () => {
+  window.location.assign("https://www.youtube.com/watch?v=IIat8oxEIbE");
+});
+
+
+const sub = document.getElementById("sub");
+
+sub.addEventListener("click", () => {
+  window.location.assign("login page/login.html");
+});
+
+const email = document.getElementById("email");
+
+email.addEventListener("click", () => {
+  window.location.assign("https://mail.google.com/mail/u/0/#inbox");
+});
+
+
    </script>
 </body>
 </html>
